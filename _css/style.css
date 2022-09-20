@@ -1,0 +1,239 @@
+@charset "UTF-8";
+
+body{
+    background-color: rgba(0, 0, 0, 0.76);
+}
+div#interface{
+    width: 900px;
+    background-color:  rgb(230, 230, 230);
+    text-align: center;
+    margin: 20px auto 10px auto;
+    border: 1px black solid;
+    box-shadow: 0px 0px 20px rgb(0, 250, 62);
+    transition: box-shadow 0.3s;
+}
+div#interface:hover{
+    box-shadow: 0px 0px 20px rgb(233, 124, 255);
+}
+/*cabecalho*/
+header#cabecalho h1{
+    
+    font-family: Arial, sans-serif;
+    font-size: 25pt;
+    transition: 0.5s;
+    padding: 10px;
+    padding-left: 25px;
+    margin-bottom: 10px;
+    color: #0be216;
+    -webkit-text-stroke: 1px black;
+}
+header#cabecalho h2{
+    font-family: Arial, sans-serif;
+    font-size: 20pt;
+    padding-left: 10px;
+    margin-top: -15px;
+    border-bottom: 1px black solid;
+    transition: 0.5s;
+    color: #0be216;
+    -webkit-text-stroke: 1px black;
+}
+
+
+header#cabecalho h1:hover{
+    color: #ff73f8;
+    font-size: 30pt;
+    padding-left: 30px;
+    -webkit-text-stroke: 1px black;
+}
+header#cabecalho h2:hover{
+    font-size: 25pt;
+    color: #ff73f8;
+    padding-left: 20px;
+    -webkit-text-stroke: 1px black;
+}
+
+
+header#cabecalho img#logo{
+    border-bottom: 1px black solid;
+    width: 400px;
+    margin-top: 10px;
+}
+
+
+/* menu */
+nav#menu{
+    margin: -20px;
+    float: left;
+    margin-right: 15px;
+}
+nav#menu ul{
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    list-style: none;
+    text-transform: uppercase;
+
+}
+nav#menu li{
+    background-color: rgb(0, 0, 0);
+    float: left;
+    margin: 10px;
+    padding: 10px;
+    width: 100px;
+    text-align: center;
+    border: 2px solid rgb(44, 255, 114);
+    box-shadow: 1px 1px 1px 1px;
+    transition: 0.5s;
+}
+
+nav#menu a{
+    color: white;
+    text-decoration: none;
+    transition: color 0.5s;
+}
+nav#menu a:hover{
+    color: rgb(0, 0, 0);
+    text-decoration: none
+}
+nav#menu li:hover{
+    box-shadow: 1px 1px 1px 0.5px;
+    border: 1px solid black;
+
+    background-color: rgb(44, 255, 114);
+    width: 150px;
+}
+
+/*corpo */
+section#corpo {
+    display: block;
+    padding: 60px;
+    margin: auto;
+}
+
+/* artigo */
+
+article#principal h2{
+    background-color: #3ffc4883;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    font-size: 15pt;
+    padding: 3px;
+    text-indent: 10px;
+    box-shadow: 0px 0px 5px black;
+    transition: background-color 0.3s;
+}
+article#principal h2:hover{
+    background-color: #ff73f8;
+
+}
+article#principal p{
+    padding-top: 3px;
+    border: 1px black;
+    font-family: Arial, sans-serif;
+    font-size: 12pt;
+    text-indent: 10px;
+}
+
+/* fotos */ 
+
+ul#fotos{
+    list-style: none;
+    width: 700px;
+    margin: 0 auto;
+    padding: 50px;
+    overflow: hidden;
+}
+
+ul#fotos li{
+    float: left;
+    margin: 10px;
+    height: 200px;
+    width: 200px;
+    border: 3px solid rgb(0, 250, 62);
+    box-shadow: 0px 0px 5px black;
+    -webkit-transition: all 0.4s ease-in-out;
+
+}
+
+ul#fotos li:hover{
+    -webkit-transform: scale(1.5);
+    border: 3px solid rgb(255, 132, 235);
+}
+
+ul#fotos li#foto01{
+    background: url("../_galeria/prosperidade.jpeg") no-repeat;
+    background-position: 50% 50%;
+    background-size: 400px 400px;
+    background-color: white;
+}
+ul#fotos li#foto01:hover {
+    background-position: 0px 0px;
+    background-size: 200px 200px;
+
+}
+
+ul#fotos li#foto02{
+    background: url("../_galeria/lotus.jpeg") no-repeat;
+    background-position: 50% 50%;
+    background-size: 400px 400px;
+    background-color: white;
+}
+ul#fotos li#foto02:hover {
+    background-position: 0px 0px;
+    background-size: 200px 200px;
+}
+ul#fotos li#foto03{
+    background: url("../_galeria/olhogrego.jpeg") no-repeat;
+    background-position: 50% 50%;
+    background-size: 400px 400px;
+    background-color: white;
+}
+ul#fotos li#foto03:hover {
+    background-position: 0px 0px;
+    background-size: 200px 200px;
+}
+ul#fotos li span{
+    opacity: 0;
+    color: white;
+    text-shadow: 1px 1px 1px black;
+    background-color: rgba(0,0,0,0.3);
+    font-size: 12pt;
+    line-height: 320px;
+    padding: 8px;
+    transition: opacity 0.4s;
+
+}
+ul#fotos li span.preco{
+    opacity: 0;
+    color: white;
+    text-shadow: 1px 1px 1px black;
+    background-color: rgba(0,0,0,0.3);
+    font-size: 12pt;
+    transition: opacity 0.4s;
+
+}
+ul#fotos li:hover span{
+    opacity: 1;
+}
+ul#fotos li:hover span.preco{
+    opacity: 1;
+}
+/*rodape*/
+
+footer#rodape {
+    clear:both;
+    border-top: 1px solid black;
+}
+
+footer#rodape p{
+    text-align: center;
+}
+footer#rodape a{
+    font-size: 16pt;
+    text-decoration: none;
+    color: rgb(147, 80, 255);
+    transition: 0.5s;
+}
+footer#rodape a:hover{
+    font-size: 18pt;
+    color: rgb(255, 0, 0);
+}
