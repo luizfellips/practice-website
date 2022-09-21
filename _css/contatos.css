@@ -1,0 +1,79 @@
+@charset "UTF-8";
+@font-face {
+    font-family: 'Anaheim';
+    src: url("../_fonts/Anaheim-Regular.ttf");
+}
+
+
+form{
+    width: 600px;
+    height: 1000px;
+    margin:100px auto 100px auto;
+}
+
+form h2{
+    margin: 40px;
+    font-family: 'Anaheim', sans-serif;
+    font-size: 20pt;
+    color: white;
+    -webkit-text-stroke: 0.5px black;
+    background-color: rgb(44, 255, 114);
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px white;
+    padding: 10px;
+}
+input,textarea,select{
+    border-radius: 7px;
+    transition: 0.5s;
+}
+input:focus,textarea:focus,select:focus{
+    border: 4px rgb(0, 0, 0) solid;
+    border-radius: 7px;
+}
+
+legend {
+    color: white;
+    font-family: Arial,sans-serif;
+    font-size: 18pt;
+}
+fieldset{
+    border-radius: 10px;
+    border-color: rgb(44, 255, 114);
+}
+
+p{
+    color: white;
+    font-family: Arial,sans-serif;
+    font-size: 13pt;
+}
+
+fieldset#sexo{
+    color: white;
+    font-family: Arial,sans-serif;
+    font-size: 13pt;
+}
+
+input[type='range'] {
+    border: 0px white solid;
+    overflow: hidden;
+    width: 80px;
+    -webkit-appearance: none;
+    background-color: #ffffff;
+    transition: 0.5s;
+  }
+  
+  input[type='range']::-webkit-slider-runnable-track {
+    height: 10px;
+    -webkit-appearance: none;
+    color: #000000;
+    margin-top: -1px;
+  }
+  
+  input[type='range']::-webkit-slider-thumb {
+    width: 10px;
+    -webkit-appearance: none;
+    height: 10px;
+    cursor: ew-resize;
+    background: #000000;
+    box-shadow: -80px 0 0 80px #35fd99;
+  }
