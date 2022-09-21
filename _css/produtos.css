@@ -1,0 +1,113 @@
+@charset "UTF-8";
+@font-face {
+    font-family: 'Anaheim';
+    src: url("../_fonts/Anaheim-Regular.ttf");
+}
+/*corpo*/
+
+section#corpo-produtos{
+    height: 1050px;
+    padding: 20px;
+    margin: 10px;
+    display: block;
+    text-align: left;
+}
+
+section#corpo-produtos h1{
+    margin: 60px;
+    font-family: 'Anaheim', sans-serif;
+    font-size: 20pt;
+    color: white;
+    -webkit-text-stroke: 0.5px black;
+    background-color: rgb(44, 255, 114);
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px white;
+    padding: 10px;
+}
+/*lista*/
+ul#produtos{
+    width:400px;
+    height: 500px;
+    list-style: none;
+}
+
+ul#produtos li{
+    height: 250px;
+    width: 250px;
+    border: 2px solid rgb(0, 250, 62);
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px black;
+    margin: 10px;
+    float: left;
+}
+
+
+ul#produtos h2{
+    color: white;
+    font-family: Arial, sans-serif;
+    width: 500px;
+    padding: 20px;
+}
+
+ul#produtos p{
+    color: white;
+    font-size: 12pt;
+    width: 800px;
+    height: 200px;
+    text-align: left;
+    font-family: Arial, sans-serif;
+}
+
+
+/*fotos */
+
+ul#produtos li#ft01{
+    background: url("../_galeria/olhogrego.jpeg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    transition: 0.7s;
+}
+ul#produtos li#ft01:hover{
+    -webkit-transform: scale(1.2);
+    margin-right: 100px;
+}
+
+ul#produtos li#ft02{
+    background: url("../_galeria/lotus.jpeg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    transition: 0.7s;
+}
+ul#produtos li#ft02:hover{
+    -webkit-transform: scale(1.2);
+    margin-right: 100px;
+    margin-bottom: 20px;
+}
+
+ul#produtos li#ft03{
+    background: url("../_galeria/prosperidade.jpeg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    transition: 0.7s;
+}
+ul#produtos li#ft03:hover{
+    -webkit-transform: scale(1.2);
+    margin-right: 80px;
+    margin-bottom: 10px;
+}
+
+
+ul#produtos li span{
+    opacity: 0;
+    color: white;
+    text-shadow: 1px 1px 1px rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.185);
+    font-size: 18pt;
+    line-height: 50px;
+    padding: 15px;
+    transition: opacity 0.7s;
+}
+
+ul#produtos li:hover span{
+    opacity: 1;
+}
